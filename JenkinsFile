@@ -1,0 +1,19 @@
+def GIT_REPOSITORY = "https://github.com/CristhianLopeJ/Framework_TICKTICK002.git"
+pipeline {
+    agent any
+
+    stages {
+        stage('Clone project') {
+            steps {
+                   deleteDir()
+               git branch: 'master', url: GIT_REPOSITORY
+
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'gradle clean test'
+            }
+        }
+    }
+}
