@@ -8,7 +8,7 @@ import java.time.Duration;
 public class Chrome implements IBrowser{
     @Override
     public WebDriver create() {
-        System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver.exe");
 
         WebDriver driver = new ChromeDriver();
 
