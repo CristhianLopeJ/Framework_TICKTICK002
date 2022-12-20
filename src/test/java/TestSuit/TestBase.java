@@ -4,9 +4,7 @@ import Page.LoginSection;
 import Page.MainPage;
 import Session.Session;
 import Utils.GetProperties;
-import com.sun.tools.javac.Main;
 import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 
 public class TestBase {
