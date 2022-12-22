@@ -9,7 +9,7 @@ import java.time.Duration;
 public class Chrome implements IBrowser {
     @Override
     public WebDriver create() {
-        WebDriverManager.chromedriver().setup();
+        System.setProperty("webdriver.chrome.driver", "src/test/resources/driver/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
